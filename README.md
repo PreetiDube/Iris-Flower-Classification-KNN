@@ -1,33 +1,65 @@
-# Iris Flower Classification using Optimized KNN
+# Iris Flower Classification using Optimized KNN 🌸
 
-A reproducible machine-learning project that classifies Iris flowers into **Setosa, Versicolor, and Virginica** using four numerical measurements and an optimized K-Nearest Neighbors (KNN) workflow.
+A machine learning project that classifies Iris flowers into **Setosa, Versicolor, and Virginica** using four flower measurements and a K-Nearest Neighbors (KNN) classifier.
 
-## Project Overview
+🔗 **[Live Website](https://preetidube.github.io/Iris-Flower-Classification-KNN/)** | **[GitHub Repository](https://github.com/PreetiDube/Iris-Flower-Classification-KNN)**
 
-This project explores the Iris dataset, compares feature-scaling approaches, and tunes a KNN classifier using cross-validation. Model performance is evaluated on a held-out test set.
+## 📌 Project Overview
 
-## Highlights
+This project explores the Iris dataset, performs exploratory data analysis, compares feature-scaling methods, and tunes a KNN classifier using cross-validation. The selected model is evaluated on a held-out test set.
 
-- Exploratory data analysis (EDA)
+## ✨ Key Features
+
+- Exploratory Data Analysis (EDA)
 - Stratified train/test split
 - Baseline KNN classifier
-- Comparison of `StandardScaler` and `MinMaxScaler`
-- Cross-validated hyperparameter tuning using `GridSearchCV`
+- StandardScaler and MinMaxScaler comparison
+- Hyperparameter tuning using GridSearchCV
 - Evaluation using accuracy, precision, recall, F1-score, and a confusion matrix
 - Example flower prediction with class probabilities
 
-## Dataset Features
+## 🌼 Dataset
 
-The model uses four measurements:
+The model uses four input features:
 
 - Sepal length
 - Sepal width
 - Petal length
 - Petal width
 
-**Target:** Iris species — Setosa, Versicolor, or Virginica.
+**Target classes:** Setosa, Versicolor, and Virginica.
 
-## Repository Structure
+## 🛠️ Technology Stack
+
+- **Language:** Python
+- **Data analysis:** Pandas, NumPy
+- **Machine learning:** Scikit-learn
+- **Visualization:** Matplotlib, Seaborn
+- **Environment:** Jupyter Notebook / Google Colab
+- **Version control:** Git, GitHub
+
+## 📊 Model Results
+
+Results from the current notebook run and selected test split:
+
+| Metric | Result |
+|---|---:|
+| Baseline KNN test accuracy (k = 3) | 93.33% |
+| Tuned KNN test accuracy | 93.33% |
+| Correct test predictions | 28 out of 30 |
+
+Hyperparameter tuning did not increase test accuracy on this particular split.
+
+### Confusion Matrix Summary
+
+- All Setosa test samples were classified correctly.
+- All Versicolor test samples were classified correctly.
+- Eight out of ten Virginica test samples were classified correctly.
+- Two Virginica samples were predicted as Versicolor.
+
+These results describe one test split and do not guarantee the same performance on new data.
+
+## 📂 Project Structure
 
 ```text
 Iris-Flower-Classification-KNN/
@@ -38,30 +70,7 @@ Iris-Flower-Classification-KNN/
 └── index.html
 ```
 
-## Model Results
-
-On the selected train/test split:
-
-| Metric | Result |
-|---|---:|
-| Baseline KNN accuracy (k = 3) | 93.33% |
-| Tuned KNN accuracy | 93.33% |
-| Correct test predictions | 28 / 30 |
-
-The tuned model's confusion matrix shows that all Setosa and Versicolor samples were classified correctly, while two Virginica samples were predicted as Versicolor.
-
-These are results from the selected test split, not a guarantee of performance on unseen data. Hyperparameter tuning did not increase test accuracy on this split.
-
-## Technology Stack
-
-- Python
-- Pandas and NumPy
-- Scikit-learn
-- Matplotlib and Seaborn
-- Jupyter Notebook
-- Git and GitHub
-
-## Run Locally
+## 🚀 Run the Project Locally
 
 ### 1. Clone the repository
 
@@ -84,11 +93,11 @@ jupyter notebook
 
 Open `IrisFlowerClassificationKNN_Better.ipynb` and run the cells in order. Keep `iris.csv` in the same directory as the notebook.
 
-## Project Links
+## 📁 Project Links
 
-- **Live project website:** https://preetidube.github.io/Iris-Flower-Classification-KNN/
-- **GitHub repository:** https://github.com/PreetiDube/Iris-Flower-Classification-KNN
+- **Live Website:** https://preetidube.github.io/Iris-Flower-Classification-KNN/
+- **Source Code and Notebook:** https://github.com/PreetiDube/Iris-Flower-Classification-KNN
 
-## Notes on Reproducibility
+## 📝 Reproducibility Notes
 
-The reported results correspond to the selected train/test split and notebook configuration. Results may vary with different splits or settings. The notebook should be run from beginning to end to reproduce the analysis.
+The reported metrics correspond to the current notebook configuration and selected train/test split. Results may vary with different splits or model settings. Run the notebook from beginning to end to reproduce the analysis.
