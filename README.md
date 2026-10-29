@@ -101,3 +101,11 @@ Open `IrisFlowerClassificationKNN_Better.ipynb` and run the cells in order. Keep
 ## 📝 Reproducibility Notes
 
 The reported metrics correspond to the current notebook configuration and selected train/test split. Results may vary with different splits or model settings. Run the notebook from beginning to end to reproduce the analysis.
+
+## Author
+
+**Preeti Dube**
+
+- GitHub: [PreetiDube](https://github.com/PreetiDube)
+- Project Repository: [Iris Flower Classification using Optimized KNN ](https://github.com/PreetiDube/Iris-Flower-Classification-KNN)
+
